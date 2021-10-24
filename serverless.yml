@@ -25,6 +25,13 @@ functions:
       - httpApi:
           path: /
           method: get
+  insertItem:
+    handler: src/insertItem.handler
+    events:
+      - http:
+          path: /item
+          method: post
+
 resources:
   Resources:
     ItemTable:
